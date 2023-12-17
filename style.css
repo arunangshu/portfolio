@@ -57,7 +57,7 @@ a{
 }
 .mypic{
     padding: 0;
-    
+    text-align: center;
 }
 .mypic img{
     height: min(92vh, calc(95vw*16/9));
