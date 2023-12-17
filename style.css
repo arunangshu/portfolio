@@ -2,6 +2,9 @@
     font-family: Poppins;
     color: white;
 }
+html{
+    font-size: calc(100vmin/40)
+}
 body{
     background-color: black;
     margin: 0;
