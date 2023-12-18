@@ -128,6 +128,7 @@ a {
         padding: 10px;
         border-radius: 10px;
         border: solid 3px;
+        background-color: #000000aa;
         backdrop-filter: blur(10px);
         translate: calc(100% + 10px);
         transition-duration: 0.5s;
@@ -135,7 +136,10 @@ a {
         margin: 0 10px;
     }
     .link{
-
+        transition-duration: 0.2s;
+    }
+    .link:hover{
+        box-shadow: 0px 0px 5px 1px rgb(0, 255, 174);
     }
     .links a{
         text-decoration: none;
