@@ -32,7 +32,7 @@ body {
 
 .logo {
     padding: 10px;
-
+    animation: navin 1.8s ease-out;
 }
 
 .logo img {
@@ -44,8 +44,11 @@ body {
 .name {
     text-align: center;
     white-space: nowrap;
+    animation: navin 1.8s ease-out;
 }
-
+.menu{
+    animation: navin 1.8s ease-out;
+}
 .links {
     width: fit-content;
     display: flex;
@@ -72,9 +75,11 @@ a:hover{
     -ms-user-select: none;
     user-select: none;
 }
+
 .noSelect:focus {
     outline: none !important;
 }
+
 .menu span{
     display: none;
 }
@@ -111,9 +116,11 @@ a:hover{
     max-width: 90%;
     animation: introin 1.8s ease-out;
 }
+
 .intro h1{
     text-align: center;
 } 
+
 @keyframes picin {
     from{
         opacity: 0;
@@ -128,6 +135,15 @@ a:hover{
     from{
         opacity: 0;
         translate: -100%;
+    }
+    to{
+
+    }
+}
+
+@keyframes navin {
+    from{
+        opacity: 0;
     }
     to{
 
