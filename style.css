@@ -50,13 +50,18 @@ body {
     display: flex;
     flex-wrap: nowrap;
     margin: 0;
-    padding: 0;
+    padding: 0 8px 0 0;
 }
-
 a {
-    padding: 0px 5px
+    text-decoration: none;
+    padding: 0px 8px;
+    transition-duration: 0.2s;
+    border-top-left-radius: 12px;
+    border-bottom-right-radius: 12px;
 }
-
+a:hover{
+    box-shadow: 0px 0px 8px 1px rgb(0, 255, 174);
+}
 .menu span{
     display: none;
 }
@@ -91,9 +96,11 @@ a {
 .intro {
     width: max(450px, 40%);
     max-width: 90%;
-    animation: introin 1.5s ease-out 0.5s;
+    animation: introin 1.8s ease-out;
 }
-
+.intro h1{
+    text-align: center;
+} 
 @keyframes picin {
     from{
         opacity: 0;
@@ -135,15 +142,12 @@ a {
         transition-timing-function: ease-out;
         margin: 0 10px;
     }
-    .link{
-        transition-duration: 0.2s;
-    }
-    .link:hover{
-        box-shadow: 0px 0px 5px 1px rgb(0, 255, 174);
-    }
     .links a{
-        text-decoration: none;
+        display: block;
         font-size: larger;
+    }
+    .link{
+        display: inline;
     }
     #ham:checked ~ .links{
         translate: 0;
