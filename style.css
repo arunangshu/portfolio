@@ -76,6 +76,7 @@ a {
 .mypic {
     padding: 0;
     text-align: center;
+    animation: picin 1.5s ease-out 0.5s;
 }
 
 .mypic img {
@@ -87,6 +88,27 @@ a {
 .intro {
     width: max(450px, 40%);
     max-width: 90%;
+    animation: introin 1.5s ease-out 0.5s;
+}
+
+@keyframes picin {
+    from{
+        opacity: 0;
+        translate: 100%;
+    }
+    to{
+
+    }
+}
+
+@keyframes introin {
+    from{
+        opacity: 0;
+        translate: -100%;
+    }
+    to{
+
+    }
 }
 
 /* Extra small devices (phones, 600px and down) */
