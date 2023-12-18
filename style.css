@@ -10,7 +10,7 @@ body {
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
-    font-size: calc(100vh/45);
+    font-size: calc(15px + 0.390625vw);
 }
 
 .navbar {
