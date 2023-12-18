@@ -1,25 +1,24 @@
-*{
+* {
     font-family: Poppins;
     color: white;
 }
-html{
-    font-size: calc(100vmin/40)
-}
-body{
+
+body {
     background-color: black;
     margin: 0;
     background-image: url(bg.png);
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
-    font-size: calc(100vmin/40);
+    font-size: calc(100vh/45);
 }
-.navbar{
+
+.navbar {
     height: 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position:-webkit-sticky;
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
     margin: 0;
@@ -27,26 +26,43 @@ body{
     backdrop-filter: blur(3px) brightness(50%);
     padding: 5px
 }
-.logo{
+
+.logo {
     padding: 10px;
-    
+
 }
-.logo img{
+
+.logo img {
     height: 36px;
     border: 2px solid rgb(212, 180, 0);
     border-radius: 5px;
 }
-.links{
-    width: fit-content;
-    white-space: nowrap;
+
+.name {
+    text-align: center;
 }
-a{
+
+.links {
+    width: fit-content;
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0;
+    padding: 0;
+}
+
+a {
     padding: 0px 5px
 }
-.menu{
+
+.menu span{
     display: none;
 }
-.main{
+
+.menu input {
+    display: none;
+}
+
+.main {
     display: flex;
     flex-direction: row-reverse;
     flex-wrap: wrap;
@@ -55,19 +71,63 @@ a{
     padding: 5px;
     max-width: 100%;
 }
-.mypic{
+
+.mypic {
     padding: 0;
     text-align: center;
 }
-.mypic img{
-    height: min(92vh, calc(95vw*16/9));
+
+.mypic img {
+    height: min(90vh, calc(95vw*16/9));
     border-radius: 20px;
     width: auto;
-    max-width: 95%;
-    
 }
-.intro{
+
+.intro {
     width: max(450px, 40%);
     max-width: 90%;
 }
 
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .menu span{
+        display: inline;
+    }
+
+    .links {
+        display: block;
+        position: fixed;
+        top: 40px;
+        right: 0px;
+        height: calc(100vh-40px);
+        padding: 10px;
+        border-radius: 10px;
+        border: solid 3px;
+        backdrop-filter: blur(10px);
+        translate: 100%;
+        transition-duration: 0.5s;
+        transition-timing-function: ease-out;
+    }
+    .link{
+
+    }
+    .links a{
+        text-decoration: none;
+        font-size: larger;
+    }
+    #ham:checked + .links{
+        translate: 0;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 768px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 992px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 1200px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen {}
