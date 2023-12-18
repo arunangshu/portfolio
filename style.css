@@ -102,7 +102,7 @@ a:hover{
 .mypic {
     padding: 0;
     text-align: center;
-    animation: picin 1.8s ease-out;
+    animation: picin 1.8s ease-out 0.01s;
 }
 
 .mypic img {
@@ -114,7 +114,7 @@ a:hover{
 .intro {
     width: max(450px, 40%);
     max-width: 90%;
-    animation: introin 1.8s ease-out;
+    animation: introin 1.8s ease-out 0.01s;
 }
 
 .intro h1{
