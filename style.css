@@ -104,9 +104,10 @@ a {
         border-radius: 10px;
         border: solid 3px;
         backdrop-filter: blur(10px);
-        translate: 100%;
+        translate: calc(100% + 10px);
         transition-duration: 0.5s;
         transition-timing-function: ease-out;
+        margin: 0 10px;
     }
     .link{
 
