@@ -116,10 +116,9 @@ a {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 650px) {
-    .menu span{
+    #menuicon{
         display: inline;
     }
-
     .links {
         display: block;
         position: fixed;
@@ -142,8 +141,14 @@ a {
         text-decoration: none;
         font-size: larger;
     }
-    #ham:checked + .links{
+    #ham:checked ~ .links{
         translate: 0;
+    }
+    #ham:checked ~ #menuicon{
+        display: none;
+    }
+    #ham:checked ~ #closeicon{
+        display: inline;
     }
 }
 
